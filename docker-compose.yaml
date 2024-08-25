@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  
+  web:
+    networks:
+      - my_wild_sugar_network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: web
+    container_name: web
+    hostname: web
+    restart: always
+    restart: on-failure
+    env_file:
+      - ./environmet/.env.dev
+    
+    volumes:
+      - ./wild_sugar:/wild_sugar
+    ports:
+      - "8000:8000"
+
+
+    
+
+
+
+# volumes:
+#   redis:
+#     driver: local
+    
+networks:
+  my_wild_sugar_network:
+    external: true

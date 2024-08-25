@@ -1,0 +1,80 @@
+[INFO] | 2024-07-01 16:46:32,273 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:46:36,165 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:46:36,165 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:51:18,875 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:51:19,314 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:51:37,826 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:51:38,272 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:51:41,955 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:51:41,955 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:52:04,993 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:52:05,437 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:52:08,572 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:52:08,573 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:53:26,768 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:53:27,234 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:53:30,118 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:53:30,119 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:54:26,288 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:54:26,726 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:54:29,211 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:54:29,212 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:54:41,250 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:54:41,702 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-01 16:54:43,573 | django.request | Bad Request: /api/master-data/po/planning | log 
+[WARNING] | 2024-07-01 16:54:43,573 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 400 313 | basehttp 
+[INFO] | 2024-07-01 16:54:55,155 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:54:55,584 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:55:53,561 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:55:53,972 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:55:58,315 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:55:58,730 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:56:02,044 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:56:02,483 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-07-01 16:56:05,968 | django.request | Internal Server Error: /api/master-data/po/planning | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py", line 32, in post
+    error = self.save_po_plan_material(serializer.data['id'], po_plan_material)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py", line 191, in save_po_plan_material
+    planning_material_distribution_reference_status, planning_material_distribution_reference_data = self.save_material_distribution(serializer.data['id'],planning_material_distribution_reference)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py", line 58, in save_material_distribution
+    print(material_distribution)
+UnboundLocalError: local variable 'material_distribution' referenced before assignment
+[ERROR] | 2024-07-01 16:56:05,969 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 500 126405 | basehttp 
+[INFO] | 2024-07-01 16:56:34,216 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:56:34,665 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:56:36,585 | django.server | "POST /api/master-data/po/planning HTTP/1.1" 201 2535 | basehttp 
+[INFO] | 2024-07-01 16:56:51,194 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:56:51,620 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:56:53,923 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:56:54,384 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:56:56,721 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:56:57,115 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:57:01,430 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:57:01,839 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:57:06,199 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:57:06,593 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:57:11,952 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:57:12,370 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:57:21,736 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:57:22,146 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-01 16:57:24,457 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/po_planning.py changed, reloading. | autoreload 
+[INFO] | 2024-07-01 16:57:24,871 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 

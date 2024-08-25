@@ -1,0 +1,203 @@
+PO
+
+1. PO planning
+
+
+item name
+default UOM
+current stock  - at the time of planning
+ideal order quantity => consumption during date range - current stock
+planned quantity
+planned date
+
+
+po create
+
+already ordered
+balance quantity
+
+Vendor wise GR
+
+if no vendor then option to add
+
+
+
+
+PO planning - 
+- Auto Increment Planning number
+- cluster store
+- consumption date  exp. 1 nov to 1 dec range
+- category of product (filter)
+- subcategory of product (filter)
+- consumable (filter)
+- high value items (filter)
+- choose vendor (filter)
+- planned for period - exp. 1 nov to 1 dec range
+- planned quantity - can be blank
+- planned numbers items
+- planned - yes/no (default yes)
+- item name
+- default UOM
+- current stock
+- ideal order quantity - system calculate, (comsumption-current stock)
+- current stock at the time of planning
+- remark
+- request add new qty
+- allowed qty (make changes in balance qty after edit)
+- price - can be blank and approximate (average from comsumption_date if not then go for last purchase price)
+
+--
+to avoid rework save planned unplanned items to mark
+
+some items we dont plan for that we create open PO
+
+all items in planning list by default when we start new plan
+
+
+-------
+already ordered - real time from bills
+balance quantity - real time
+
+
+
+extra - 
+counters for planned/ unplanned items real time
+
+
+
+PO create -  po GRn multiple
+- cluster store 
+- item code
+- item name
+- qty (suggestion)
+- vendor name
+- delivery date
+- delivery location
+- remark
+
+
+----- 
+
+manual po create
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================
+
+PO
+
+1. PO planning
+
+
+item name
+default UOM
+current stock  - at the time of planning
+ideal order quantity => consumption during date range - current stock
+planned quantity
+planned date
+
+
+po create
+
+already ordered
+balance quantity
+
+Vendor wise GR
+
+if no vendor then option to add
+
+
+
+
+PO planning - 
+- Auto Increment Planning number
+- cluster store
+- consumption date  exp. 1 nov to 1 dec range
+- category of product (filter)
+- subcategory of product (filter)
+- consumable (filter)
+- high value items (filter)
+- choose vendor (filter)
+- planned for period - exp. 1 nov to 1 dec range
+- planned quantity - can be blank
+- planned numbers items
+- planned - yes/no (default yes)
+- item name
+- default UOM
+- current stock
+- ideal order quantity - system calculate, (comsumption-current stock)
+- current stock at the time of planning
+- remark
+- request add new qty
+- allowed qty (make changes in balance qty after edit)
+- price - can be blank and approximate (average from comsumption_date if not then go for last purchase price)
+
+--
+to avoid rework save planned unplanned items to mark
+
+some items we dont plan for that we create open PO
+
+all items in planning list by default when we start new plan
+
+
+-------
+already ordered - real time from bills
+balance quantity - real time
+
+
+
+extra - 
+counters for planned/ unplanned items real time
+
+
+
+PO create -  po GRn multiple
+- cluster store 
+- item code
+- item name
+- qty (suggestion)
+- vendor name
+- delivery date
+- delivery location
+- remark
+
+
+----- 
+
+manual po create
+
+
+
+
+
+================
+a. recipe food cost 
+b. recipe varibale cost
+c. recipe packaging cost
+d. yield quantity
+e. Total recipe cost = a+b+c
+f. Cost of item = e/d
+g. Food cost = a/d
+
+
+

@@ -1,0 +1,101 @@
+[INFO] | 2024-07-19 17:02:30,417 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:02:48,893 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:02:49,334 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:06:38,762 | django.server | "GET /api/master-data/store/parent?store=14 HTTP/1.1" 200 566 | basehttp 
+[INFO] | 2024-07-19 17:07:11,592 | django.server | "GET /api/master-data/store/parent?store=13 HTTP/1.1" 200 566 | basehttp 
+[INFO] | 2024-07-19 17:08:29,736 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:08:30,486 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:08:44,975 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:08:45,560 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:12:35,648 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:12:36,247 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:14:39,024 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:14:39,900 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:15:14,768 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:15:15,344 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:15:44,746 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:15:45,300 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:15:46,727 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:15:47,351 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:16:01,895 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:16:02,501 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:17:42,763 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:17:46,954 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:18:32,676 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:18:33,135 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:22:21,991 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:22:22,434 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:22:51,933 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:22:52,376 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:23:51,132 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:23:51,572 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:24:07,998 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:24:08,449 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:24:14,836 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:24:15,294 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:24:30,698 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:24:31,168 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:26:32,649 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-07-19 17:26:37,045 | django.request | Internal Server Error: /api/master-data/copy/par | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py", line 123, in post
+    if copy_from_pos and copy_to and copy_from_dept:
+UnboundLocalError: local variable 'copy_to' referenced before assignment
+[ERROR] | 2024-07-19 17:26:37,046 | django.server | "POST /api/master-data/copy/par HTTP/1.1" 500 105702 | basehttp 
+[INFO] | 2024-07-19 17:26:55,181 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:26:55,658 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-07-19 17:26:57,278 | django.request | Internal Server Error: /api/master-data/copy/par | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py", line 128, in post
+    for par in par:
+UnboundLocalError: local variable 'par' referenced before assignment
+[ERROR] | 2024-07-19 17:26:57,279 | django.server | "POST /api/master-data/copy/par HTTP/1.1" 500 106418 | basehttp 
+[INFO] | 2024-07-19 17:27:12,137 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:27:12,630 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:27:16,579 | django.server | "POST /api/master-data/copy/par HTTP/1.1" 200 93 | basehttp 
+[INFO] | 2024-07-19 17:27:46,230 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:27:46,696 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:27:50,790 | django.server | "POST /api/master-data/copy/par HTTP/1.1" 200 302 | basehttp 
+[INFO] | 2024-07-19 17:28:15,250 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:28:15,710 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:28:26,151 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:28:26,629 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:28:35,021 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/par_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-19 17:28:35,473 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-19 17:28:39,711 | django.server | "POST /api/master-data/copy/par HTTP/1.1" 200 106 | basehttp 

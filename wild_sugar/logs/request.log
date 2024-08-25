@@ -1,0 +1,20 @@
+[INFO] | 2024-08-24 08:35:35,187 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-08-24 08:37:20,151 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-08-24 08:37:20,152 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 400 143 | basehttp 
+[INFO] | 2024-08-24 08:37:35,323 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 201 2595 | basehttp 
+[WARNING] | 2024-08-24 08:38:30,199 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-08-24 08:38:30,200 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 143 | basehttp 
+[WARNING] | 2024-08-24 08:38:42,760 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-08-24 08:38:42,760 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 111 | basehttp 
+[INFO] | 2024-08-24 08:38:45,903 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2620 | basehttp 
+[WARNING] | 2024-08-24 08:39:22,301 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-08-24 08:39:22,301 | django.server | "GET /api/master-data/store/issue?pos=1&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 400 92 | basehttp 
+[INFO] | 2024-08-24 08:39:52,198 | django.server | "GET /api/master-data/store/issue?to_pos=1&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-08-24 08:40:00,691 | django.server | "GET /api/master-data/store/issue?to_pos=1&submitted=false&status=ordered&page=1&count_per_page=20 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-08-24 08:40:07,460 | django.server | "GET /api/master-data/store/issue?to_pos=1&submitted=false&status=draft&page=1&count_per_page=20 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-08-24 08:40:08,557 | django.server | "GET /api/master-data/store/issue?to_pos=1&submitted=false&status=draft&page=1&count_per_page=20 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-08-24 08:40:12,544 | django.server | "GET /api/master-data/store/issue?to_pos=1&submitted=false&page=1&count_per_page=20 HTTP/1.1" 200 2621 | basehttp 
+[INFO] | 2024-08-24 08:40:32,119 | django.server | "GET /api/master-data/store/issue?to_pos=1&to_department=2&submitted=false&page=1&count_per_page=20 HTTP/1.1" 200 2621 | basehttp 
+[INFO] | 2024-08-24 08:40:56,317 | django.server | "GET /api/master-data/store/issue?to_pos=1&to_department=2&received=true&page=1&count_per_page=20 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-08-24 08:41:04,218 | django.server | "GET /api/master-data/store/issue?to_pos=1&to_department=2&received=False&page=1&count_per_page=20 HTTP/1.1" 200 2621 | basehttp 
+[INFO] | 2024-08-24 08:41:07,863 | django.server | "GET /api/master-data/store/issue?to_pos=1&to_department=2&received=false&page=1&count_per_page=20 HTTP/1.1" 200 2621 | basehttp 

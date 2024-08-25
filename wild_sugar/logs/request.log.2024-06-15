@@ -1,0 +1,1075 @@
+[INFO] | 2024-06-13 16:22:37,544 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:23:29,231 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:23:29,944 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:23:51,256 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:23:51,693 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:29:03,609 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_items'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_items` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_items'.
+[ERROR] | 2024-06-13 16:29:03,611 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:30:41,990 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:30:42,615 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:30:48,062 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_items'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_items` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_items'.
+[ERROR] | 2024-06-13 16:30:48,064 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:32:11,754 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:32:12,363 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:32:20,325 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:32:23,042 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_items'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_items` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_items'.
+[ERROR] | 2024-06-13 16:32:23,043 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:32:52,912 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:32:53,384 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:34:32,366 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:34:32,828 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:35:04,564 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_items'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_items` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_items'.
+[ERROR] | 2024-06-13 16:35:04,566 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:37:13,488 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:37:20,187 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_items'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_items` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_items'.
+[ERROR] | 2024-06-13 16:37:20,188 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:39:18,725 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:39:19,356 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:40:33,225 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:40:33,980 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:40:44,388 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:40:44,925 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:41:13,439 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:41:13,890 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:41:40,381 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:41:40,841 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:41:46,199 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:41:46,822 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:42:21,229 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:42:29,586 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:42:30,123 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-13 16:42:43,707 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-13 16:42:43,707 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 400 79 | basehttp 
+[ERROR] | 2024-06-13 16:42:52,618 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_material'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_material` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_material'.
+[ERROR] | 2024-06-13 16:42:52,619 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143510 | basehttp 
+[INFO] | 2024-06-13 16:43:09,864 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:43:10,501 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:43:14,444 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:43:17,143 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_materials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_materials` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_materials'.
+[ERROR] | 2024-06-13 16:43:17,144 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 143534 | basehttp 
+[INFO] | 2024-06-13 16:47:29,639 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:47:30,117 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:48:13,495 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:48:13,927 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:48:29,122 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:48:29,573 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:48:37,478 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 37, in post
+    return JsonResponse({'message':'Store Issue created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 1838, in to_representation
+    return method(value)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py", line 1042, in get_store_issue_materials
+    return StoreIssueItemSerializer(StoreIssueItems.objects.filter(store_issue=obj.id).all(), many=True).data
+AttributeError: 'QuerySet' object has no attribute 'id'
+[ERROR] | 2024-06-13 16:48:37,481 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 500 131586 | basehttp 
+[INFO] | 2024-06-13 16:49:13,606 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:49:14,310 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:49:22,811 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:49:23,297 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:49:27,436 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 201 728 | basehttp 
+[ERROR] | 2024-06-13 16:50:39,175 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'store_issue_materials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 102, in put
+    return JsonResponse({'message':'Store Issue updated Successfully.', 'status':True, 'status_code':200, 'result':serializer.data}, stauts=200)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store_issue_materials` on serializer `StoreIssueReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'store_issue_materials'.
+[ERROR] | 2024-06-13 16:50:39,176 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 500 139241 | basehttp 
+[INFO] | 2024-06-13 16:50:55,408 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:50:56,038 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-13 16:50:59,354 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 102, in put
+    return JsonResponse({'message':'Store Issue updated Successfully.', 'status':True, 'status_code':200, 'result':serializer.data}, stauts=200)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/http/response.py", line 692, in __init__
+    super().__init__(content=data, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/http/response.py", line 371, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'stauts'
+[ERROR] | 2024-06-13 16:50:59,355 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 500 115493 | basehttp 
+[INFO] | 2024-06-13 16:51:09,616 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:51:10,429 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:51:14,993 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 728 | basehttp 
+[INFO] | 2024-06-13 16:55:23,802 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-13 16:55:24,492 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-13 16:55:48,489 | django.server | "DELETE /api/master-data/store/issue HTTP/1.1" 200 101 | basehttp 
+[INFO] | 2024-06-14 05:58:34,763 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 05:58:35,448 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 05:58:37,623 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 05:58:38,109 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-14 05:58:54,889 | django.request | Method Not Allowed: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-14 05:58:54,890 | django.server | "GET /api/master-data/store/issue?id=1 HTTP/1.1" 405 40 | basehttp 
+[INFO] | 2024-06-14 06:01:36,914 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:01:37,599 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:02:28,326 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:02:28,773 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:03:11,396 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:03:11,883 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:03:40,389 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:03:40,843 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:04:09,319 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:04:09,768 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:04:21,167 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:04:21,637 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:04:25,969 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:04:26,417 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:05:04,986 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:05:05,445 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:05:55,113 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 06:05:55,554 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 06:06:05,559 | django.server | "GET /api/master-data/store/issue?id=2 HTTP/1.1" 200 2312 | basehttp 
+[INFO] | 2024-06-14 06:07:33,446 | django.server | "GET /api/master-data/store/issue?child_store=10 HTTP/1.1" 200 6788 | basehttp 
+[INFO] | 2024-06-14 06:08:10,088 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-06-14 06:08:18,164 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=false HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-06-14 06:08:22,358 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=false HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-06-14 06:09:22,333 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=false HTTP/1.1" 200 4558 | basehttp 
+[INFO] | 2024-06-14 06:09:30,956 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true HTTP/1.1" 200 4558 | basehttp 
+[INFO] | 2024-06-14 06:09:43,035 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true&status=ordered HTTP/1.1" 200 2327 | basehttp 
+[INFO] | 2024-06-14 06:09:57,802 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 200 2327 | basehttp 
+[INFO] | 2024-06-14 06:10:46,405 | django.server | "GET /api/master-data/store/issue?parent_store=12&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 200 2327 | basehttp 
+[INFO] | 2024-06-14 16:05:57,013 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:06:34,683 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:06:35,112 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:06:51,503 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:06:51,950 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:06:55,263 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:06:55,719 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-14 16:07:09,865 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 158, in get
+    store_issue = StoreIssue.objects.filter(child_store=child_store).filter(**obj).all()
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1297, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1341, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'iequal' for CharField or join on the field not permitted.
+[ERROR] | 2024-06-14 16:07:09,866 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 500 145724 | basehttp 
+[INFO] | 2024-06-14 16:09:31,202 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:09:31,661 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:09:34,915 | django.server | "GET /api/master-data/store/issue?child_store=10&submitted=true&status=ordered&page=1&count_per_page=20 HTTP/1.1" 200 2327 | basehttp 
+[INFO] | 2024-06-14 16:09:43,152 | django.server | "POST /api/master-data/store/issue HTTP/1.1" 201 2325 | basehttp 
+[INFO] | 2024-06-14 16:09:50,568 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2325 | basehttp 
+[INFO] | 2024-06-14 16:11:55,074 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:11:55,545 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:13:07,372 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:13:07,831 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:15:09,039 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:15:09,493 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-14 16:15:27,951 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-14 16:15:28,393 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:34:17,088 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 07:36:16,801 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'store_issue.submitted_on' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 140, in put
+    store_issue = StoreIssue.objects.filter(id=id).last()
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 1054, in last
+    for obj in (self.reverse() if self.ordered else self.order_by("-pk"))[:1]:
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/MySQLdb/connections.py", line 255, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'store_issue.submitted_on' in 'field list'")
+[ERROR] | 2024-06-15 07:36:16,804 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 500 197243 | basehttp 
+[INFO] | 2024-06-15 07:36:40,310 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:36:51,584 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2450 | basehttp 
+[INFO] | 2024-06-15 07:38:28,415 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:38:28,852 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:38:37,266 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:38:37,730 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:39:04,217 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:39:04,690 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:39:17,085 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:39:17,516 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:39:37,886 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2475 | basehttp 
+[INFO] | 2024-06-15 07:41:29,313 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2498 | basehttp 
+[INFO] | 2024-06-15 07:42:01,228 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2498 | basehttp 
+[INFO] | 2024-06-15 07:42:56,377 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:42:56,813 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:43:25,294 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:43:25,738 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:43:29,061 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:43:29,552 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 07:43:30,975 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2498 | basehttp 
+[INFO] | 2024-06-15 07:44:13,223 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:44:13,715 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 07:44:31,980 | django.request | Internal Server Error: /api/master-data/store/issue | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py", line 181, in put
+    return JsonResponse({'message':'Error during updating ordered store issue items.', 'status':False, 'status_code':400, 'error':error}, status=400)
+UnboundLocalError: local variable 'error' referenced before assignment
+[ERROR] | 2024-06-15 07:44:31,981 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 500 102713 | basehttp 
+[INFO] | 2024-06-15 07:44:54,452 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 07:44:54,973 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-15 07:44:56,647 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-15 07:44:56,647 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 190 | basehttp 
+[INFO] | 2024-06-15 07:45:10,703 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2498 | basehttp 
+[INFO] | 2024-06-15 07:45:54,728 | django.server | "GET /api/master-data/store/issue?id=5 HTTP/1.1" 200 2436 | basehttp 
+[INFO] | 2024-06-15 07:47:40,488 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2475 | basehttp 
+[WARNING] | 2024-06-15 07:49:54,345 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-15 07:49:54,345 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 176 | basehttp 
+[INFO] | 2024-06-15 07:51:13,223 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2473 | basehttp 
+[WARNING] | 2024-06-15 07:52:32,904 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-15 07:52:32,905 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 190 | basehttp 
+[WARNING] | 2024-06-15 07:53:11,071 | django.request | Bad Request: /api/master-data/store/issue | log 
+[WARNING] | 2024-06-15 07:53:11,071 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 400 190 | basehttp 
+[INFO] | 2024-06-15 07:53:32,630 | django.server | "PUT /api/master-data/store/issue HTTP/1.1" 200 2474 | basehttp 
+[INFO] | 2024-06-15 08:23:32,842 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:23:33,469 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:23:43,791 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:23:44,402 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:24:19,011 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:24:19,469 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:24:37,866 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:24:38,309 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:26:01,091 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:26:01,699 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:28:06,812 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:28:07,382 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:30:38,718 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:30:39,357 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 08:31:10,900 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 08:31:11,526 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:13:07,539 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:13:54,240 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:13:54,749 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:14:42,394 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:14:42,876 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:15:39,574 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:15:40,090 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:16:25,743 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:16:26,195 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:16:32,563 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:16:33,001 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:16:35,311 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:16:35,757 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:17:21,386 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:17:21,826 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:17:38,241 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:17:38,788 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:20:04,209 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:20:04,640 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:25:24,096 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:25:24,646 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:44:13,787 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:44:14,254 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:44:52,848 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:44:53,354 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:44:55,701 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:45:16,566 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:46:58,561 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:46:59,048 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:47:17,477 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:47:17,934 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 10:47:30,312 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 10:47:30,750 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-15 10:57:03,687 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 10:57:03,687 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 400 275 | basehttp 
+[WARNING] | 2024-06-15 10:58:51,249 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 10:58:51,250 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 400 171 | basehttp 
+[ERROR] | 2024-06-15 11:01:37,054 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'StockTransfer' object has no attribute 'final_product'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 39, in post
+    return JsonResponse({'message':'Stock transfer saved successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `final_product` on serializer `StockTransferItemReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `StockTransfer` instance.
+Original exception text was: 'StockTransfer' object has no attribute 'final_product'.
+[ERROR] | 2024-06-15 11:01:37,055 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 500 153925 | basehttp 
+[INFO] | 2024-06-15 11:02:21,269 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:02:21,738 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 11:02:26,029 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'StockTransfer' object has no attribute 'stock_transfer_materials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 39, in post
+    return JsonResponse({'message':'Stock transfer saved successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `stock_transfer_materials` on serializer `StockTransferReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `StockTransfer` instance.
+Original exception text was: 'StockTransfer' object has no attribute 'stock_transfer_materials'.
+[ERROR] | 2024-06-15 11:02:26,030 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 500 164905 | basehttp 
+[INFO] | 2024-06-15 11:02:56,395 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:02:56,907 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:03:25,441 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:03:25,875 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:03:54,364 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:03:54,796 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 11:04:00,818 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'StockTransfer' object has no attribute 'stock_transfer_materials'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 39, in post
+    return JsonResponse({'message':'Stock transfer saved successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `stock_transfer_materials` on serializer `StockTransferReadSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `StockTransfer` instance.
+Original exception text was: 'StockTransfer' object has no attribute 'stock_transfer_materials'.
+[ERROR] | 2024-06-15 11:04:00,820 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 500 164917 | basehttp 
+[INFO] | 2024-06-15 11:05:31,809 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:05:32,296 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:06:27,831 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:06:30,305 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 201 4796 | basehttp 
+[INFO] | 2024-06-15 11:08:15,312 | django.server | "POST /api/master-data/stock/transfer HTTP/1.1" 201 4821 | basehttp 
+[INFO] | 2024-06-15 11:10:09,738 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:10:10,208 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:10:39,717 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:10:40,241 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:11:03,714 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:11:04,157 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:11:14,554 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:11:14,992 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:12:14,749 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:12:15,183 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:12:36,617 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:12:37,049 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:12:45,472 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:12:45,985 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:12:59,415 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:12:59,877 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:13:14,286 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:13:14,722 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:13:45,243 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:13:45,689 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:14:08,199 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:14:08,725 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:14:50,359 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:14:50,868 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:17:44,401 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:17:44,860 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:17:59,256 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:17:59,725 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:18:07,099 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:18:07,534 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:18:21,949 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:18:22,382 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:19:05,951 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:19:06,396 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:19:19,817 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:19:20,276 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:19:32,707 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:19:33,167 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:20:14,743 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:20:15,199 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:20:27,576 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:20:28,027 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:21:52,875 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:21:53,307 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:23:55,968 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 200 1600 | basehttp 
+[INFO] | 2024-06-15 11:24:23,682 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:24:24,111 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:24:28,473 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 200 4798 | basehttp 
+[INFO] | 2024-06-15 11:25:42,694 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 200 4813 | basehttp 
+[INFO] | 2024-06-15 11:27:18,625 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 200 4813 | basehttp 
+[WARNING] | 2024-06-15 11:28:15,113 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 11:28:15,113 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 400 161 | basehttp 
+[INFO] | 2024-06-15 11:28:54,359 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:28:54,854 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-15 11:29:04,923 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 11:29:04,924 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 400 179 | basehttp 
+[WARNING] | 2024-06-15 11:30:20,489 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 11:30:20,490 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 400 179 | basehttp 
+[INFO] | 2024-06-15 11:32:28,591 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 200 4827 | basehttp 
+[ERROR] | 2024-06-15 11:33:11,074 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 171, in put
+    v_status, v_error = self.verify_data(items, id, store_issue.status)
+TypeError: cannot unpack non-iterable NoneType object
+[ERROR] | 2024-06-15 11:33:11,075 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 500 102565 | basehttp 
+[INFO] | 2024-06-15 11:34:51,768 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:34:52,248 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 11:35:08,135 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 171, in put
+    v_status, v_error = self.verify_data(items, id, store_issue.status)
+TypeError: cannot unpack non-iterable NoneType object
+[ERROR] | 2024-06-15 11:35:08,136 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 500 102565 | basehttp 
+[INFO] | 2024-06-15 11:35:28,843 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:35:29,370 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 11:35:33,149 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 172, in put
+    v_status, v_error = self.verify_data(items, id, store_issue.status)
+TypeError: cannot unpack non-iterable NoneType object
+[ERROR] | 2024-06-15 11:35:33,150 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 500 102507 | basehttp 
+[INFO] | 2024-06-15 11:36:18,072 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:36:18,566 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:36:20,922 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:36:21,448 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-06-15 11:36:24,197 | django.request | Internal Server Error: /api/master-data/stock/transfer | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py", line 173, in put
+    v_status, v_error = self.verify_data(items, id, store_issue.status)
+TypeError: cannot unpack non-iterable NoneType object
+[ERROR] | 2024-06-15 11:36:24,198 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 500 102507 | basehttp 
+[INFO] | 2024-06-15 11:37:46,417 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:37:46,877 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-06-15 11:37:50,601 | django.request | Bad Request: /api/master-data/stock/transfer | log 
+[WARNING] | 2024-06-15 11:37:50,601 | django.server | "PUT /api/master-data/stock/transfer HTTP/1.1" 400 179 | basehttp 
+[INFO] | 2024-06-15 11:38:26,494 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:38:26,937 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:39:05,560 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:39:06,054 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:40:28,950 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:40:29,424 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:40:58,998 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:40:59,484 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:41:20,959 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:41:21,466 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:43:12,571 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:43:13,022 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:43:21,375 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:43:21,858 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:43:52,375 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:43:52,834 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:44:10,253 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:44:10,706 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:44:48,275 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:44:48,740 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:45:45,417 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:45:45,904 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:45:58,300 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:45:58,752 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:46:31,307 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:46:31,760 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:46:38,116 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:46:38,581 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:46:58,038 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:46:58,474 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:47:40,058 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:47:40,502 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:47:51,892 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:47:52,391 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:48:19,456 | django.server | "GET /api/master-data/stock/transfer?id=1 HTTP/1.1" 200 4814 | basehttp 
+[INFO] | 2024-06-15 11:49:35,076 | django.server | "GET /api/master-data/stock/transfer?from_pos=5&from_department=2 HTTP/1.1" 200 9554 | basehttp 
+[INFO] | 2024-06-15 11:50:01,218 | django.server | "GET /api/master-data/stock/transfer?from_pos=5&from_department=2&page=1&count_per_page=20 HTTP/1.1" 200 9554 | basehttp 
+[INFO] | 2024-06-15 11:51:25,018 | django.server | "GET /api/master-data/stock/transfer?from_pos=5&from_department=2&page=1&count_per_page=20&submitted=true HTTP/1.1" 200 9554 | basehttp 
+[INFO] | 2024-06-15 11:52:12,390 | django.server | "GET /api/master-data/stock/transfer?from_pos=5&from_department=2&page=1&count_per_page=20&received=true HTTP/1.1" 200 4828 | basehttp 
+[INFO] | 2024-06-15 11:52:52,333 | django.server | "GET /api/master-data/stock/transfer?to_pos=1&to_department=2&page=1&count_per_page=20&received=true HTTP/1.1" 200 4828 | basehttp 
+[INFO] | 2024-06-15 11:55:58,251 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:55:58,721 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 11:56:27,216 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/stock_transfer_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 11:56:27,653 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-15 15:28:26,594 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/store_issue_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-06-15 15:28:27,290 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 

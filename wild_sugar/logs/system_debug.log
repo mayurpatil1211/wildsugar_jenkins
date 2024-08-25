@@ -1,0 +1,17 @@
+[ERROR] | 2023-08-13 10:31:07,286 | debug_file   | Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance. | brand_apis 
+[ERROR] | 2023-08-13 10:31:07,287 | debug_file   | Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance. | brand_apis 
+[WARNING] | 2023-08-13 10:32:24,628 | debug_file   | {} | brand_apis 
+[WARNING] | 2023-08-13 10:32:24,629 | debug_file   | {} | brand_apis 
+[WARNING] | 2023-08-13 10:34:04,110 | debug_file   | {} | brand_apis 
+[WARNING] | 2023-08-13 10:34:04,111 | debug_file   | {} | brand_apis 
+[WARNING] | 2023-08-13 10:35:32,174 | debug_file   | {'brand': [ErrorDetail(string='Incorrect type. Expected pk value, received Brand.', code='incorrect_type')]} | brand_apis 
+[WARNING] | 2023-08-13 10:35:32,175 | debug_file   | {'brand': [ErrorDetail(string='Incorrect type. Expected pk value, received Brand.', code='incorrect_type')]} | brand_apis 
+[WARNING] | 2023-08-13 10:35:53,725 | debug_file   | {'non_field_errors': [ErrorDetail(string='The fields user, brand must make a unique set.', code='unique')]} | brand_apis 
+[ERROR] | 2023-08-13 15:56:23,905 | debug_file   | (1062, "Duplicate entry 'shareholder@gmail.com' for key 'user.email_id'") | company_apis 
+[ERROR] | 2023-08-14 11:53:18,137 | debug_file   | (1062, "Duplicate entry 'shareholder@gmail.com' for key 'user.email_id'") | company_apis 
+[ERROR] | 2023-08-14 12:02:37,687 | debug_file   | (1062, "Duplicate entry 'shareholder@gmail.com' for key 'user.email_id'") | company_apis 
+[ERROR] | 2023-08-15 05:11:21,379 | debug_file   | (1062, "Duplicate entry 'shareholder@gmail.com' for key 'user.email_id'") | company_apis 
+[ERROR] | 2023-08-15 05:16:13,575 | debug_file   | (1048, "Column 'user_id' cannot be null") | company_apis 
+[ERROR] | 2023-08-15 05:18:54,483 | debug_file   | (1048, "Column 'user_id' cannot be null") | company_apis 
+[ERROR] | 2023-08-15 05:22:53,460 | debug_file   | (1048, "Column 'user_id' cannot be null") | company_apis 
+[ERROR] | 2023-08-15 06:19:21,709 | debug_file   | (1048, "Column 'user_id' cannot be null") | company_apis 

@@ -1,0 +1,7 @@
+[INFO] | 2024-06-27 10:43:37,760 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-06-27 10:43:42,120 | django.server | "POST /api/master-data/final-product/filters HTTP/1.1" 200 98 | basehttp 
+[INFO] | 2024-06-27 10:43:57,722 | django.server | "POST /api/master-data/final-product/filters HTTP/1.1" 200 98 | basehttp 
+[INFO] | 2024-06-27 10:45:23,960 | django.server | "POST /api/master-data/final-product/filters HTTP/1.1" 200 98 | basehttp 
+[INFO] | 2024-06-27 10:46:26,166 | django.server | "POST /api/master-data/semi-product/filters HTTP/1.1" 200 1306 | basehttp 
+[INFO] | 2024-06-27 10:47:54,132 | django.server | "POST /api/master-data/final-product/filters HTTP/1.1" 200 98 | basehttp 
+[INFO] | 2024-06-27 10:48:10,029 | django.server | "POST /api/master-data/final-product/filters HTTP/1.1" 200 1511 | basehttp 

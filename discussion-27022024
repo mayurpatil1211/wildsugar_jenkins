@@ -1,0 +1,45 @@
+seeting at cluster level and brand level
+
+Inventory alarms 
+
+items goes below level - only to assigned users
+
+----------------------
+
+
+# List from extra uom for listing in CREATE PO
+# while creating PO check quantity towards po plan allowed quantity
+# approved statuses
+# how many autoapproved and not approved
+
+# received items logs tables
+
+# PO create by ID
+
+# po Approved by if manually approved
+
+example 
+
+1.  
+    a.item PO created 100 kg
+        received in 3 iteration or 2 iteration 
+        80, 20 keep logs
+
+    b. received over qty(120) create po if not available already or else deduct from created PO with same item and vendor filter
+
+keep status. partially filled / FULLFILLED
+
+
+------------
+
+UOM conversion new mapping table
+
+KG to GRAM
+
+
+----- Purchase
+
+Follow - https://docs.google.com/spreadsheets/d/14nxuEjekkfDoXAFxRyLFBeN3LKnEX_cP4wkJbiyka9s/edit#gid=0
+
+tax can be null - based on GST enabled (GST Purchase [Y / N])
+Asset and RM inventory together , keep flag to recognise it includes assets as well 

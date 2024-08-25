@@ -1,0 +1,116 @@
+[INFO] | 2024-07-07 06:45:02,212 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 06:46:00,201 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 06:46:00,615 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 06:46:18,999 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/urls.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 06:46:19,392 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[ERROR] | 2024-07-07 06:54:37,661 | django.request | Internal Server Error: /api/master-data/order/sheet | log 
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'POS' object has no attribute 'store'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/auth_app/decorators/check_permission_decorator.py", line 31, in decorator
+    return drf_custom_method(self, *args, **kwargs)
+  File "/home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py", line 37, in post
+    return JsonResponse({'message':'Order Sheet created successfully.', 'status':True, 'status_code':201, 'result':serializer.data}, status=201)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+  File "/home/mayur/Documents/wild-sugar/env/lib/python3.8/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `store` on serializer `PoSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `POS` instance.
+Original exception text was: 'POS' object has no attribute 'store'.
+[ERROR] | 2024-07-07 06:54:37,662 | django.server | "POST /api/master-data/order/sheet HTTP/1.1" 500 164311 | basehttp 
+[INFO] | 2024-07-07 06:56:31,711 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/serializers.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 06:56:32,122 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 06:56:35,682 | django.server | "POST /api/master-data/order/sheet HTTP/1.1" 201 2002 | basehttp 
+[INFO] | 2024-07-07 06:58:54,982 | django.server | "PUT /api/master-data/order/sheet HTTP/1.1" 200 2002 | basehttp 
+[INFO] | 2024-07-07 06:59:54,784 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 06:59:55,416 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:00:08,725 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:00:11,673 | django.server | "PUT /api/master-data/order/sheet HTTP/1.1" 200 2027 | basehttp 
+[INFO] | 2024-07-07 07:02:14,808 | django.server | "PUT /api/master-data/order/sheet HTTP/1.1" 200 2053 | basehttp 
+[INFO] | 2024-07-07 07:03:32,059 | django.server | "PUT /api/master-data/order/sheet HTTP/1.1" 200 2675 | basehttp 
+[INFO] | 2024-07-07 07:04:49,449 | django.server | "PUT /api/master-data/order/sheet HTTP/1.1" 200 3325 | basehttp 
+[INFO] | 2024-07-07 07:07:53,464 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:07:53,922 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:09:23,269 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:09:23,679 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:09:38,131 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:09:38,557 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:00,091 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:00,510 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:05,853 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:06,277 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:08,574 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:08,980 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:15,315 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:15,734 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:23,086 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:23,490 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:35,911 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:36,398 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:42,763 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:43,177 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:10:46,519 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:10:46,927 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:11:21,644 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:11:22,055 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:11:54,760 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:11:55,165 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:12:01,506 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:12:01,955 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:13:49,433 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:13:49,841 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:14:14,432 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:14:14,841 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:14:47,471 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:14:47,868 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:16:05,081 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:16:05,489 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:16:40,329 | django.server | "GET /api/master-data/order/sheet?from_pos=1&from_department=2 HTTP/1.1" 200 97 | basehttp 
+[INFO] | 2024-07-07 07:16:44,090 | django.server | "GET /api/master-data/order/sheet?from_pos=5&from_department=2 HTTP/1.1" 200 5259 | basehttp 
+[INFO] | 2024-07-07 07:19:13,063 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:19:13,498 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:19:34,998 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:19:35,411 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:19:47,462 | django.server | "POST /api/master-data/order/sheet HTTP/1.1" 201 2039 | basehttp 
+[INFO] | 2024-07-07 07:20:00,052 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/models.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:20:00,822 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-07 07:20:02,939 | django.server | "POST /api/master-data/order/sheet HTTP/1.1" 201 2040 | basehttp 
+[INFO] | 2024-07-07 07:20:32,587 | django.server | "DELETE /api/master-data/order/sheet HTTP/1.1" 200 101 | basehttp 
+[INFO] | 2024-07-07 07:21:08,078 | django.utils.autoreload | /home/mayur/Documents/wild-sugar/wildsugar_backend/wild_sugar/master_app/apis/master_data_apis/master_data_core/order_sheet_apis.py changed, reloading. | autoreload 
+[INFO] | 2024-07-07 07:21:08,503 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[WARNING] | 2024-07-07 07:21:12,017 | django.request | Bad Request: /api/master-data/order/sheet | log 
+[WARNING] | 2024-07-07 07:21:12,017 | django.server | "DELETE /api/master-data/order/sheet HTTP/1.1" 400 62 | basehttp 
+[INFO] | 2024-07-07 07:21:16,275 | django.server | "DELETE /api/master-data/order/sheet HTTP/1.1" 200 84 | basehttp 
+[INFO] | 2024-07-07 07:21:41,690 | django.server | "GET /api/master-data/order/sheet?from_pos=5&from_department=2 HTTP/1.1" 200 3974 | basehttp 

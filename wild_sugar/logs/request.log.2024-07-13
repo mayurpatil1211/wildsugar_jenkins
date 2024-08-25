@@ -1,0 +1,6 @@
+[INFO] | 2024-07-13 06:12:10,445 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-13 06:12:19,830 | django.server | "GET /api/master-data/par?pos=5&department=2&page=1&count_per_page=2 HTTP/1.1" 200 96 | basehttp 
+[INFO] | 2024-07-13 06:14:16,604 | django.utils.autoreload | Watching for file changes with StatReloader | autoreload 
+[INFO] | 2024-07-13 06:14:19,111 | django.server | "POST /api/master-data/par HTTP/1.1" 200 1100 | basehttp 
+[INFO] | 2024-07-13 06:14:24,525 | django.server | "GET /api/master-data/par?pos=5&department=2&page=1&count_per_page=2 HTTP/1.1" 200 2010 | basehttp 
+[INFO] | 2024-07-13 06:14:45,032 | django.server | "GET /api/master-data/par?pos=5&department=2&page=1&count_per_page=12 HTTP/1.1" 200 3236 | basehttp 
