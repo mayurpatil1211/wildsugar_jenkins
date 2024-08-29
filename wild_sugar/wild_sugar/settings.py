@@ -113,12 +113,12 @@ WSGI_APPLICATION = 'wild_sugar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 
@@ -354,4 +354,4 @@ REST_FRAMEWORK = {
 
 
 
-from .setting_environment.local_settings import *
+# from .setting_environment.local_settings import *
